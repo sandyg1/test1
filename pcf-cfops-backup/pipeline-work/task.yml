@@ -26,4 +26,4 @@ params:
   KEY:
 
 run:
-  path: pcf-cfops-backup/pipeline-work/task.sh
+  path: pipelines/pcf-cfops-backup/pipeline-work/task.sh
