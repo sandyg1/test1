@@ -48,5 +48,5 @@ function main() {
  sshpass -e ssh -o StrictHostKeyChecking=no ubuntu@${OPSMAN_IP} ${ROUTE3}
  echo "Setting  ${ROUTE4}"
  sshpass -e ssh -o StrictHostKeyChecking=no ubuntu@${OPSMAN_IP} ${ROUTE4}
- 
+
  main "${PWD}"
