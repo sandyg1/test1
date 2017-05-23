@@ -1,19 +1,19 @@
 
 resources:
-- name: test-pipelines
+- name: test1
   type: git
   source:
     uri: {{github_url}}
     username: {{github_token}}
 
 jobs:
-  
+
 - name: test-ssh
   plan:
   - aggregate:
     - get: test-pipelines
   - task: SSH-and-SCP
-    file: test-pipelines/pcf-cfops-backup/pipeline-work/task.yml
+    file: test1/pcf-cfops-backup/pipeline-work/task.yml
     params:
       OPSMAN_IP: {{opsman_ip}}
       SSHPASS: {{opsman_ssh_password}}
