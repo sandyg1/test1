@@ -26,4 +26,5 @@ params:
   KEY:
 
 run:
-  path: test1/pcf-cfops-backup/pipeline-work/task1.sh
+#  path: test1/pcf-cfops-backup/pipeline-work/task1.sh
+  pcf-backup-scripts/pcf-cfops-backup/scripts/cleanup-old-files-in-repo.sh
