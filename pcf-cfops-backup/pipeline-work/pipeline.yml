@@ -11,7 +11,7 @@ jobs:
 - name: test-ssh
   plan:
   - aggregate:
-    - get: test-pipelines
+    - get: test1
   - task: SSH-and-SCP
     file: test1/pcf-cfops-backup/pipeline-work/task.yml
     params:
