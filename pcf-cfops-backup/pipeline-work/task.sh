@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 
 # Copyright 2017-Present Pivotal Software, Inc. All rights reserved.
 #
