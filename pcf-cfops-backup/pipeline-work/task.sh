@@ -1,4 +1,4 @@
-#!/bin/bash -eu
+#!/bin/bash -e
 
 # Copyright 2017-Present Pivotal Software, Inc. All rights reserved.
 #
@@ -23,5 +23,3 @@
 
 
  sshpass -e ssh -o StrictHostKeyChecking=no ubuntu@${OPSMAN_IP} ls
-
- main "${PWD}"
