@@ -1,0 +1,17 @@
+resources:
+- name: test-git
+  type: git
+  source:
+    uri: https://github.com/sandyg1/test1.git
+    branch: master
+
+jobs:
+- name: Show variables
+  plan:
+  - aggregate:
+    - get: test-git
+  - task: print-vars
+    file: pcf-prometheus-git/pipeline/tasks/print-vars.yml
+    params:
+      ssh_private_key: ((id_rsa.private_key))
+      ssh_public_key: ((id_rsa.public_key))

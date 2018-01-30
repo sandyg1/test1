@@ -1,0 +1,14 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: czero/rootfs
+
+params:
+- name: ssh_private_key
+- name: ssh_public_key
+
+run:
+  path: test1/pipeline/tasks/print-vars.sh
