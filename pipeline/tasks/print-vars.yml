@@ -11,4 +11,4 @@ params:
 - name: ssh_public_key
 
 run:
-  path: test-git/pipeline/tasks/print-vars.sh
+  path: test1/pipeline/tasks/print-vars.sh
