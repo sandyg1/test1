@@ -11,7 +11,7 @@ jobs:
   - aggregate:
     - get: test-git
   - task: print-vars
-    file: pcf-prometheus-git/pipeline/tasks/print-vars.yml
+    file: test1/pipeline/tasks/print-vars.yml
     params:
       ssh_private_key: ((id_rsa.private_key))
       ssh_public_key: ((id_rsa.public_key))
