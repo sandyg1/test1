@@ -215,7 +215,7 @@ cf_properties=$(
       ".ha_proxy.skip_cert_verify": { "value": true },
       ".properties.container_networking_interface_plugin.silk.network_cidr": { "value": $container_networking_nw_cidr },
       ".properties.route_services.enable.ignore_ssl_cert_verification": { "value": true },
-      ".properties.security_acknowledgement": { "value": $security_acknowledgement },
+  #    ".properties.security_acknowledgement": { "value": $security_acknowledgement },
       ".properties.system_database": { "value": "external" },
       ".properties.system_database.external.port": { "value": "3306" },
       ".properties.system_database.external.host": { "value": $db_host },
