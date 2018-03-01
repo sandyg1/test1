@@ -1,0 +1,28 @@
+groups: []
+resources: []
+resource_types: []
+jobs:
+- name: hello-world
+  plan:
+  - task: say-hello
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source:
+          repository: ubuntu
+      params:
+        pubkey: ((id_rsa.public_key))
+        privkey: ((id_rsa.private_key))
+      run:
+        path: sh
+        args:
+        - -exc
+        - |
+          #whoami
+          #env
+          echo ""
+          echo "$pubkey"
+
+          echo ""
+          echo "$privkey"

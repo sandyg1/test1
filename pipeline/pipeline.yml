@@ -1,15 +1,15 @@
 resources:
-- name: test-git
+- name: test1
   type: git
   source:
     uri: https://github.com/sandyg1/test1.git
     branch: master
 
 jobs:
-- name: Show variables
+- name: variables
   plan:
   - aggregate:
-    - get: test-git
+    - get: test1
   - task: print-vars
     file: test1/pipeline/tasks/print-vars.yml
     params:
