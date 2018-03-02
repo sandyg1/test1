@@ -16,12 +16,10 @@ resources:
 - name: pcf-pipelines
   type: git
   source:
+    uri: git@github.com:sandyg1/test1.git
     branch: master
     private_key: {{git_private_key}}
-    uri: https://github.com/pivotal-cf/pcf-pipelines
-    branch: master
-    tag_filter: v0.23.0
-    
+
 - name: terraform-state
   type: gcs
   source:
