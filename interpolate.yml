@@ -18,3 +18,4 @@ run:
   - "-c"
   - |
     bosh int <(echo "${YAML}") > config/${FILENAME}
+    cat config/${FILENAME}
